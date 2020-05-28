@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="photos/icon.png">
+    <link rel="stylesheet" href="mutual-funds.css">
+    <script src="mutual-funds.js"></script>
+    <title>Mutual Funds</title>
+    <link rel="stylesheet" href="css/style.css">    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Equity</a></li>
+                <li><a href="#" id="active">Mutual Funds</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="photos/logo.png" alt="">
+        </div>
+    </header>
+    
+    <div class="navigate">
+        <h2>Contents of the Page</h2>
+        <ul>
+            <li><a href="#sip">What is SIP?</a></li>
+            <li><a href="#sipcalci">SIP Calculator</a></li>
+            <li><a href="#startearly">Power of Starting Early</a></li>
+            <li><a href="#parallax">Message from the Author</a></li>
+        </ul>
+    </div>
+
+
+
+    <div class="sip" id="sip">
+        <h2>What is SIP ?</h2>
+        <img src="photos/sip.png" width="85%" alt="">
+        <p>A Systematic Investment Plan (SIP), more popularly known as SIP, is a facility offered by mutual funds to the investors to invest in a disciplined manner. SIP facility allows an investor to invest a fixed amount of money at pre-defined intervals in the selected mutual fund scheme. The fixed amount of money can be as low as Rs. 500, while the pre-defined SIP intervals can be on a weekly/monthly/quarterly/semi-annually or annual basis. By taking the SIP route to investments, the investor invests in a time-bound manner without worrying about the market dynamics and stands to benefit in the long-term due to average costing and power of compounding.</p>
+
+    </div>
+
+    <div class="videos">
+        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/k3SbFoyeFbI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="100%" height="200px" src="https://www.youtube.com/embed/q5JJv2GWphU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="sipcalci" id="sipcalci">
+        <h2 id="siphead">SIP Calculator</h2>
+        <p style="text-align: left; border-bottom: solid 1px silver;">A SIP calculator is a simple tool that allows individuals to get an idea of the returns on their mutual fund investments made through SIP. SIP investments in mutual funds have become one of the most popular investment options for millennials lately.
+            This calculator will calculate the wealth gain and expected returns for your monthly SIP investment. Indeed, you get a rough estimate on the maturity amount for any of your monthly SIP, based on a projected annual return rate.
+        </p>
+        <p>Monthly Investment ↴</p>
+        <input type="text" value="5000" id="amtinvested" onkeyup="calculate()"> Rs.
+        <p>Number of Years ↴</p>
+        <input type="text" value="30" id="nofoyears" onkeyup="calculate()"> Yr.
+        <p>Returns ↴</p>
+        <input type="text" value="15" id="rateofreturn" onkeyup="calculate()"> %
+        <br>
+        <!-- <button onclick="return calculate();">find</button> -->
+        <div class="ans">
+            <h3 id="expectedAmount"></h3>
+            <h3 id="totalInvested"></h3>
+        </div>
+
+            <canvas id="myChart" width="400" height="400"></canvas>
+            <h3 id="quote"><span>❝</span>I highly recommend you to play with this awesome calculator by providing variations to different fields. Find the best combination which suits for you and your plans.</h3>
+            <div class="plans">
+                <img src="photos/plan1.jpg" alt="">
+                <img src="photos/plan2.jpg" alt="">
+                <img src="photos/plan3.jpg" alt="">
+                <img src="photos/plan4.jpg" alt="">
+                <img src="photos/plan5.jpg" alt="">
+                <img src="photos/plan6.jpg" alt="">
+            </div>
+    </div>
+    
+    <div class="startearly" id="startearly">
+        <h2 style="border-bottom: solid 1px silver;">Power of Starting early</h2>
+        <img src="photos/sip2.png" width="100%" alt="">
+        <h3 id="quote"><span>❝</span>5 Years’ early start result in an
+            additional Rs. 1.21 crore in the
+            final retirement corpus.</h3>
+            <p>The earlier one starts saving and investing regularly, the easier it is to achieve your goals. The graph below shows the impact of beginning to invest Rs.5,000 monthly at various stages of life till the age of 60 years (assuming a return of 12% p.a.).</p>
+        <img src="photos/startearlygraph.png" width="100%" alt="">
+    </div>
+    
+    <div class="parallax" id="parallax">
+        <div class="content">
+        <h2>Author's Message</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, nihil. Praesentium non vitae, sed expedita voluptatum adipisci quibusdam molestiae. Sit cum accusamus quam pariatur quas dolorum facilis minima nihil ex possimus quisquam amet at ad ipsam, voluptas accusantium vitae aut. Omnis perspiciatis dicta itaque tempore dolores voluptas excepturi, facilis totam!</p>
+        
+        </div>
+    </div>
+    <footer>
+        <h4>Developed By Kartiken Barnwal</h4>
+        <h5>©2020 Investocks.in<br>Terms and Conditions</h5>
+        <img src="photos/logo.png" width="100%" alt="">
+    </footer>
+      
+</body>
+</html>

@@ -1,0 +1,191 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: url('photos/bg4.jfif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    font-family: cursive;
+    transition: 0.5s ease;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    text-align: center;
+    display: block;
+    padding: 10px;
+    transition: 0.2s ease;
+}
+nav a:hover{
+    background-color: black;
+    color: #696969;
+}
+#active{
+    background-color: black;
+    color:#696969;
+}
+/* color: #696969; */
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+nav ul li{
+    font-size: 100%;
+    font-family: cursive;
+}
+.logo img{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 18%;
+}
+
+.navigate{
+    margin: 10% 2%;
+}
+.navigate li{
+    margin-top: 2%;
+}
+.navigate li a{
+    text-decoration: none;
+    color: #fa5b3d;
+    text-decoration: underline;
+}
+
+
+
+.sip{
+    margin: 7% 2%;
+}
+.sip p{
+    text-align: left;
+}
+.sip h2{
+    margin: 0 2%;
+    border-bottom: solid 1px #C0C0C0;
+}
+
+/* Youtube videos */
+.videos iframe{
+    margin-top: 10%;
+}
+
+/* SIP calculator */
+.sipcalci{
+    text-align: center;
+    margin: 0 3%;
+}
+.sipcalci #siphead{
+    /* display: inline-block; */
+    text-align: left;
+    border-bottom: solid 1px #C0C0C0;
+}
+.sipcalci input{
+    margin-bottom: 2%;
+    border-radius: 5%;
+    width: 30%;
+    font-size: 150%;
+    /* background-color: #C0C0C0; */
+    color: black;
+    text-align: center;
+    border: solid 1px #0d0d0d; 
+}
+.sipcalci input:focus{
+    outline: none;
+}
+.ans{
+    margin-top: 10%;
+    background-color: black;
+    color: #C0C0C0;
+    border-radius: 4%;
+    padding: 2%;
+}
+#expectedAmount{
+    transition: 0.5s ease-in;  
+}
+canvas{
+    margin-top: 10%;
+}
+.sipcalci .plans{
+    margin: 0;
+    padding: 0;
+}
+.sipcalci .plans img{
+    width: 46vw;
+}
+
+
+
+
+
+/* start early */
+.startearly{
+    margin: 0 2%;
+}
+#quote{
+    color: rgb(18, 88, 134);
+    line-height: 160%;
+    border-bottom: 1px solid #fa5b3d;
+}
+#quote span{
+    font-size: 300%;
+    color: #fa5b3d;
+}
+
+/* parallax */
+.parallax{
+    background-image: url(photos/me-bw.jpg);
+    background-size: cover;
+    min-height: 100%;
+    background-attachment: fixed;
+} 
+.parallax .content h2{
+    background-color: #C0C0C0;
+    color: black;
+    position: relative;
+    width: fit-content;
+    margin-left:15%;
+    transform: translate(0, 200%);
+} 
+.parallax .content p{
+    text-align: center;
+    margin: 100% 5% 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #C0C0C0;
+    
+}
+
+
+
+/* orange soda: #fa5b3d */
+/* electric blue: #96DED1 */
+/* footer */
+footer{
+    background-color:#C0C0C0;
+    padding: 5%;
+    bottom: 0;
+    color:black;
+    margin: 0;
+    border-top: solid 1px #696969;
+}
+footer h4{
+    color: #C0C0C0;
+    background-color: black;
+    font-size: 90%;
+    letter-spacing: 2px;
+    padding: 2%;
+}
+footer img{
+    width: 30%;
+    float: right;
+    transform: translate(0,-140%);
+}
