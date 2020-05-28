@@ -40,7 +40,7 @@ nav ul{
 }
 nav ul li{
     font-size: 100%;
-    font-family: cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .logo img{
     position: absolute;
@@ -153,14 +153,16 @@ canvas{
     color: black;
     position: relative;
     width: fit-content;
-    margin-left:15%;
+    margin-left:18%;
     transform: translate(0, 200%);
 } 
 .parallax .content p{
     text-align: center;
     margin: 100% 5% 10%;
-    background-color: rgba(0, 0, 0, 0.6);
+    transform: translate(0,-2%);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #C0C0C0;
+    font-size: 140%;
     
 }
 
