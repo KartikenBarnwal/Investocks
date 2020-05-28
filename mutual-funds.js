@@ -40,8 +40,7 @@ function calculate() {
             label: "Assets (rupees)",
             backgroundColor: ["#fa5b3d", "rgb(18, 88, 134)"],
             data: [total_amount_invested.toFixed(2),expected_amount_on_maturity.toFixed(2)],
-            values:[ans1,ans2]
-
+            
           }]
         },
         options: {

@@ -9,8 +9,8 @@ body{
     padding: 0;
     margin: 0;
     height: 100%;
-    font-family: cursive;
     transition: 0.5s ease;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 nav a{
     text-decoration: none;
