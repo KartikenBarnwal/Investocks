@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equity-Investocks</title>
+    <link rel="icon" href="photos/icon.png">
+
+    <link rel="stylesheet" href="equity.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#" id="active">Equity</a></li>
+                <li><a href="index.html">Mutual Funds</a></li>
+            </ul>
+        </nav>
+        <div class="logo">
+            <img src="photos/logo.png" alt="">
+        </div>
+    </header>
+    
+    <div class="slideshow-container">
+        
+        <div class="slide fade">
+            <img src="photos/equity1.jpg" alt="" width="100%" height="250px">
+            <div class="txt">how to value the current market?<br>the secret of nifty valuation through some tested strategies</div>
+        </div>
+        <div class="slide fade">
+            <img src="photos/equity2.jpg" alt="" width="100%" height="250px">
+            <div class="txt">powerful technical analysis tools widely used among the experts.<br>know how to time the market!</div>
+        </div>
+        <div class="slide fade">
+            <img src="photos/equity3.jpg" alt="" width="100%" height="250px">
+            <div class="txt">how to read company's quarterly and annual results. fundamental step towards fundamental analysis!</div>
+        </div>
+        <div class="slide fade">
+            <img src="photos/equity4.jpg" alt="" width="100%" height="250px">
+            <div class="txt">importance of a diversified portfolio of investment asset class. get your own recommended portfolio...</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+    </div>
+
+    <div class="intro">
+        <h2>Strategies for Valuing the Current Market</h2>
+        <p>We will be discussing very important strategies here which will be useful for understanding the current state of the market i.e whether it's in oversold zone or overbought zone! Once you are able to make such an important conclusion, it will be easy to analyze when to exit the market and when to make an entry into the same.</p>
+        <ul>
+            <li><a href="#niftype">Nifty 50 P/E Ratio</a></li>
+            <li><a href="#niftypb">Nifty 50 P/B Ratio</a></li>
+            <li><a href="mcapgdp">Market Cap to GDP Ratio</a></li>
+        </ul>
+        <h3 id="quote"><span>❝</span>Be fearful when others are greedy and be greedy only when others are fearful! <span>~Warren Buffet</span></h3>
+        <img src="photos/warren.png" width="100%" alt="">
+    </div>
+
+    <div class="niftype" id="niftype">
+        <h2>Nifty P/E Ratio</h2>
+        <h3>What is it all about?</h3>
+        <p>Full form of PE ratio is price to earnings ratio and it is broadly used to identify how cheap or expensive a particular index (such as Nifty – Nifty PE ratio - See the Nift PE Chart) or a particular stock such as (TCS – TCS PE ratio) is. Simply put P/E ratio implies the amount an investor is willing to pay to earn one rupee as profit. For example, if PE ratio of a company is 25 it means that investors are willing to pay INR 25 for one rupee profit the company earns. Similarly if Nifty PE ratio is 23, it means investors are willing to pay INR 23 for one rupee profit collectively earned by all the companies that are included in Nifty. Nifty PE ratio is provided by NSE India website on daily basis.</p>
+        
+        <img src="photos/niftypechart.png" alt="" width="100%">
+        <p>To track the PE Ratio, I am leaving here a link <a href="https://trendlyne.com/equity/PE/NIFTY50/1887/nifty-50-price-to-earning-ratios/" style="color: #fa5b3d;" target="_blank">Click Here</a>
+        </p>
+        <h3>What to take home from this chart?</h3>
+        <p>Nifty PE ratio is important as it is a measure of valuation of all the companies included in Nifty. From long term perspective, low Nifty P/E ratio is considered cheap and ideal for going long. A high Nifty PE multiple on the other hand is assumed to be expensive and warrants caution while taking investment decisions (Booking profit or going short is a better strategy than going long in High PE ratio scenario). The same can be depicted from studying the Nifty PE vs Nifty chart above. When Nifty PE ratio is at its peak (in the range of 25 to 30), nifty is also at its peak and vice versa. It's clear from the chart above that stock market witnesses a sharp sell off when nifty pe is near 25 and witnesses heavy buying when nifty pe ratio is round 12 to 15.</p>
+        <h3 id="quote"><span>❝</span>Be dammn greedy when the PE ratio is below 17! Invest heavily here with a long term vision.<span>~The Author</span></h3>
+        <h3>Common Mistake Investors make while valuing the market!</h3>
+        <p>Investors should not judge nifty index or sensex by its value. Nifty at 8900 and Sensex at 29000 are merely numbers and one needs to take EPS of all the constituent stocks into consideration before making an investment decision. Whether the index is cheap or pricey should be judged on the basis of its PE ratio rather than the value. Based on historical data and pure common sense, investors can safeguard their investment portfolio and earn handsome profit by following the investment rationale suggested in following table.</p>
+        <table>
+            <tr>
+                <th>valuation</th>
+                <th>nifty PE ratio range</th>
+                <th>investment decision</th>
+            </tr>
+            <tr>
+                <td>very expensive</td>
+                <td>25 to 30</td>
+                <td id="red">it's rare event and screaming sell.</td>
+            </tr>
+            <tr>
+                <td>expensive</td>
+                <td>20 to 25</td>
+                <td id="red">book 80% profit and wait for better entry levels</td>
+            </tr>
+            <tr>
+                <td>average</td>
+                <td>15 to 20</td>
+                <td id="green">buy or hold</td>
+            </tr>
+            <tr>
+                <td>inexpensve</td>
+                <td>12 to 15</td>
+                <td id="green">screaming buy</td>
+            </tr>
+            <tr>
+                <td>extremely inexpensive</td>
+                <td>below 12</td>
+                <td id="green">rare event, screaming buy</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="niftypb" id="niftypb">
+        <h2>Nifty P/B Ratio</h2>
+        <h3>What is Nifty PB Ratio?</h3>
+        <p>As with Nifty PE ratio, investors can also investigate Nifty PB ratio to gauge if the market is undervalued or overvalued. Normally, the Nifty P/B ratio value remains <b>between 2 and 5</b> (It crossed 6 in 2008 - A sign of the highly overvalued market - See the Nifty PB chart). Just to understand what Nifty PB ratio means, let’s say the current Nifty P/B multiple is 3. This means that on average, the Nifty 50 companies are valued as much as three times than what is actually present in their books. So as the Nifty PB ratio goes up, the valuation gets expensive and vice versa. Nifty P/B ratio of around <b>2.75 to 3.25 is considered fair</b> as far as market valuation is concerned (Opportunity to hold). <b>P/B of 2 or lower signifies that Nifty is significantly undervalued</b> (Ample opportunity to go long) and <b>P/B of greater than 4.5 signifies Nifty is highly overvalued</b> (Opportunity to book profit).</p>
+        <img src="photos/niftypbchart.png" alt="" width="100%" style="color: #fa5b3d;" target="_blank"> 
+        <p>To track the PB Ratio, I am leaving here a link <a href="https://trendlyne.com/equity/PE/NIFTY50/1887/nifty-50-price-to-earning-ratios/" style="color: #fa5b3d;" target="_blank">Click Here</a>
+        </p>
+        <h3 id="quote" style="margin-top: 10%;"><span>❝</span>The market finds the reason to fall whether it is The Economic Depression of 2008 or 2020's deadly Covid pandemic. Hence, market should be regularly valued and analysed!<span>~The Author</span></h3>
+    </div>
+
+    <div class="parallax" id="parallax">
+        <div class="content">
+        <h2>Author's Message</h2>
+        <p>The ongoing time is COVID-19 pandemic when i write this to you all. India's lockdown have unfolded into multiple phases of lockdown. During such a time, there are many optimists who were working on themselves whether it is their passion, backlogs or nourishing new skills.
+            <br>
+            I too found some time for myself and furnished my Web Development Skills from HTML,CSS to Java Script, Node.js and Web Hoisting. Moreover, i think i have recieved the valuable understanding of <emp>STOCK MARKET & MUTUAL FUNDS</emp>. These two skills together threw some light on a thought which has lead to the existence of the site you have landed onto.
+            <br>
+            I really am not certain where will i end with <emp>The Investocks</emp>, my new platform. I find my friends and even the grown ups oblivion of this great Asset Investment Class. My vision is to provide my readers, specially of my age (currently i am 19) with a user-friendly and dynamic platform to study Stocks, Mutual Funds and Debt Funds in the most simplimistic manner.
+            <br>
+            Currently Investocks provide views on Mutual Funds and Fundamental Analysis, but i promise you all that i'll continue adding more features, content and tools. Aspiring of creating this site as one of the most helpful & visited sites in India is in itself a great step towards the desired and i hope i do my best for it.  
+            <br><br><br><span style="text-transform: uppercase;">Wishing you a very good luck ✌</span>
+        </p>
+        </div>
+    </div>
+    <footer>
+        <h4>Developed By Kartiken Barnwal</h4>
+        <h5>©2020 Investocks.in<br>Terms and Conditions</h5>
+        <img src="photos/logo.png" width="100%" alt="">
+    </footer>
+    
+
+        <script src="slideshow.js"></script>
+        <!-- <script src="api.js"></script> -->
+</body>
+</html>

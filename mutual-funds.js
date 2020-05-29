@@ -63,6 +63,7 @@ function read(num){
     {
         var main=parseFloat(num/100000).toFixed(2) 
         return main+" Lac"
-    } 
+    }
+    return num 
     
 }
